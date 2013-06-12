@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <title>David Ok</title>
+  </head>
+  
+  <body>
+    <!-- ============================= HEADER ========================== -->
+    <header>
+      <h1>David OK</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><i class="icon-home"></i> <a href="index.html">Home</a></li>
+          <li><i class="icon-search"></i> <a href="publications.html">Publications</a></li>
+          <li><i class="icon-cogs"></i> <a href="software.html">Software</a></li>
+          <li><i class="icon-music"></i> <a href="music.html">Music</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ============================= ABOUT ME ======================== -->
+    <section id="about-me">
+      <article>
+        <h2>About me</h2>
+        <img alt="portrait" id="portrait"/ src="me.jpg" />
+        <p>I have graduated on March 25, 2013 and hold a PhD in Computer Science.</p>
+        <p>Previously, I was a research assistant advised by 
+        <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a> and 
+        <a href="http://imagine.enpc.fr/~audibert/">Jean-Yves Audibert</a> 
+        at <a href="http://imagine.enpc.fr">IMAGINE</a>, 
+        which is part of the Center for Learning and Visual Computing of 
+        <a href="http://www.ecp.fr/">Ecole Centrale Paris</a> and 
+        <a href="http://www.enpc.fr/">Ecole des Ponts ParisTech</a>.</p>
+
+        <h2>Research Interests</h2>
+        <p>My research interests lie at the intersection of computer vision and machine learning. In particular, I have focused on:</p>
+        <ul>
+            <li>fa&ccedil;ade analysis</li>
+            <li>feature correspondence</li>
+            <li>pattern detection</li>
+            <li>grammar-based parsing</li>
+        </ul>
+
+
+        <h2>Resume</h2>
+        <p>You can find my resume <a href="https://dl.dropbox.com/u/80774144/cv/cv-en.pdf">here</a>.</p>               
+        <p><a href="http://fr.linkedin.com/pub/david-ok/b/586/54b">LinkedIn profile  <i class="icon-linkedin"></i></a>.</p>
+        <p><i class="icon-envelope-alt"></i> To contact me: <img alt="email" id="email" src="email.png" />.</p>
+      </article>
+    </section>
+
+    
+    
+    <!-- ============================= FOOTER ========================== -->
+    <footer>
+      <p class="quote">
+        <i class="icon-quote-left"></i> Our greatest glory is not in never failing, but in rising up every time we fail.<i class="icon-quote-right"></i>
+        <i class="quoted-author">Ralph Waldo Emerson</i>
+      </p>
+      <a href="">Copyright &copy; <span>David OK, 2013 - present</span>.</a>
+    </footer>
+
+    
+    
+    <!-- =============== Javascript code for smooth scrolling ========== -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $('a[href^="#"]').click
+    (
+        function()
+        {
+            var link_name = $(this).attr("href");
+            $('html, body').animate
+            (
+                { scrollTop: $(link_name).offset().top },
+                'fast'
+            );
+        return false;
+    });
+    </script>
+    <script>
+    $('footer').click(
+        function() {
+            $('body, html').animate(
+                { scrollTop: 0 },
+                'fast'
+            );
+            return false;
+        }
+    );
+    </script>
+  </body>
+</html>

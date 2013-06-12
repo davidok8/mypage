@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+        </script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <title>David Ok</title>
+  </head>
+    
+  <body>
+    <!-- ============================= HEADER ========================== -->
+    <header>
+      <h1>David OK</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><i class="icon-home"></i> <a href="index.html">Home</a></li>
+          <li><i class="icon-search"></i> <a href="publications.html">Publications</a></li>
+          <li><i class="icon-cogs"></i> <a href="software.html">Software</a></li>
+          <li><i class="icon-music"></i> <a href="music.html">Music</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      
+      
+    <section id="music">
+      <article>
+        <h2>Recordings of Guitar Rehearsals at Home</h2>
+
+        <p>In my spare time, I love playing guitar and inventing music. Unfortunately, my work is taking so much time and I don't have the luxury to devote all my energy for the guitar.</p>
+
+        
+        
+        <h3>List of Recordings</h3>
+        <p>Here you can find some recorded rehearsals, which I did in order to preserve the technique. Obviously, the playing is SOOOOO far from being perfect and the guitar is recorded with poor means. Maybe, you will enjoy them...</p>
+        
+        <ol>
+            <li><a href="https://dl.dropbox.com/u/80774144/music/rehearsal/cancion-chile-jorge-cardoso.mp3">Canción (Chile) - Jorge Cardoso</a>. Fabulous composition using the flamenco tremolo.<br/>
+            <b>TODO</b>: <i>strenghten the tremolo volume and balance between the voice and the bass. Dynamics can be definitely improved. Stay focused and finish properly.</i></li>
+            <li>
+                <a href="https://dl.dropbox.com/u/80774144/music/rehearsal/milonga-jorge-cardoso.mp3">Milonga - Jorge Cardoso</a>.<br/> 
+                <b>TODO</b>: <i>Redo the second theme and tempo is inconsistent in some parts. Focus on better conveying melancholy and enforce the "tango" atmosphere. Percussive effect too loud.</i>
+            </li>
+            <li>
+                <a href="https://dl.dropbox.com/u/80774144/music/compo-impro/impro1.mp3">Improvised Composition 1</a>. First ever recorded improvisation. I was so worried about what to do every two seconds. All the same, despite being very simple, I think that the playing sounds not too bad.<br/>
+                <b>TODO</b>: <em>Re-record with a better microphone. Pursue ideas and synthesize themes.</em></li>
+            </li>
+            <li>
+                <a href="https://dl.dropbox.com/u/80774144/music/compo-impro/impro2.mp3">Improvised Composition 2</a>. Borrows some ideas as in the first composition but played with more confidence.
+            </li>
+        </ol>
+        <p>Other recordings will be coming later when time allows it. I am learning (at an irregular basis though) other pieces to absorb new ideas. Existing ones will be replaced when I play them better: like good ol' wine, musicianship ages well over the years.</p>
+        
+        
+        <h3>Tributes to composers I play</h3>
+        <h4>A Jorge Cardoso</h4>
+        <p>Todos mis agradecimientos a Señor Cardoso. Me enamoré de la guitarra una segunda vez con vuestra música bella en un momento de mi juventud en que me desanime de este instrumento difícil y caprichoso. Usted es uno de mis compositores favoritos. Si usted, por casualidad, aterriza en esta pagina, discúlpame por estas grabaciones que no hacen justicia realmente a vuestras composiciones.</p>
+      </article>
+        
+       
+    </section>
+      
+      
+      
+      
+    <!-- ============================= FOOTER ========================== -->
+    <footer>
+      <p class="quote">
+          <i class="icon-quote-left"></i> Music is my religion. <i class="icon-quote-right"></i>
+          <i class="quoted-author">Jimmy Hendrix</i>
+      </p>   
+      <a href="">Copyright &copy; <span>David OK, 2013 - present</span>.</a>
+    </footer>
+
+
+    <!-- =============== Javascript code for smooth scrolling ========== -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $('a[href^="#"]').click
+    (
+        function()
+        {
+            var link_name = $(this).attr("href");
+            $('html, body').animate
+            (
+                { scrollTop: $(link_name).offset().top },
+                'fast'
+            );
+        return false;
+    });
+    </script>
+    <script>
+    $('footer').click(
+        function() {
+            $('body, html').animate(
+                { scrollTop: 0 },
+                'fast'
+            );
+            return false;
+        }
+    );
+    </script>
+  </body>
+</html>

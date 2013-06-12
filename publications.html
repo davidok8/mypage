@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <title>David Ok</title>
+  </head>
+    
+  <body>
+    <!-- ============================= HEADER ========================== -->
+    <header>
+      <h1>David OK</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><i class="icon-home"></i> <a href="index.html">Home</a></li>
+          <li><i class="icon-search"></i> <a href="publications.html">Publications</a></li>
+          <li><i class="icon-cogs"></i> <a href="software.html">Software</a></li>
+          <li><i class="icon-music"></i> <a href="music.html">Music</a></li>
+        </ul>
+      </nav>
+    </header>
+      
+      
+    <!-- ========================== PUBLICATIONS ======================= -->
+    <section id="publications">
+      <article>
+        <h2>Publications</h2>
+        <ul>
+          <li>
+              <a href="https://dl.dropboxusercontent.com/u/80774144/phd/phd-thesis.pdf">Robust Feature Correspondence and Pattern Detection for Façade Analysis.</a><br/>
+              David Ok.<br/>
+              <em>PhD Dissertation</em>, Université Paris-Est, IMAGINE, Ecole des Ponts ParisTech, 2013.
+              <a href="https://dl.dropbox.com/u/80774144/phd/phd-defense-slides.pdf">Defense Slides</a>.
+          </li>
+          <li>
+              <a href="http://hal-enpc.archives-ouvertes.fr/docs/00/74/30/44/PDF/accv2012-id-29.pdf">Efficient and Scalable 4th-order Match Propagation.</a><br/>
+              David Ok, Renaud Marlet, Jean-Yves Audibert.<br/>
+              In <em>11th Asian Conference on Computer Vision (<a href="http://www.accv2012.org/">ACCV</a>)</em>, Daejeon, South Korea, November 2012.
+          </li>
+          <li>
+              <a href="http://hal-enpc.archives-ouvertes.fr/docs/00/74/30/43/PDF/PID2507871.pdf">High-Level Bottom-Up Cues for Top-Down Parsing of Facade Image.</a><br/>
+              David Ok, Mateusz Koziński, Renaud Marlet, Nikos Paragios.<br/>
+              In <em>2nd Joint 3DIM/3DPVT Conference on 3D Imaging, Modeling, Processing, Visualization and Transmission (<a href="http://threedimpvt2012.ethz.ch/">3DIMPVT</a></b>)</em>, Zürich, Switzerland, October 2012.
+          </li>
+        </ul>
+      </article>
+    </section>
+      
+      
+      
+      
+    <!-- ============================= FOOTER ========================== -->
+    <footer>
+      <p class="quote">
+        <i class="icon-quote-left"></i> If you steal from one author it's plagiarism; if you steal from many it's research. <i class="icon-quote-right"></i>
+        <i class="quoted-author">Wilson Mizner</i>
+      </p>
+      <a href="">Copyright &copy; <span>David OK, 2013 - present</span>.</a>
+    </footer>
+      
+      
+      
+      
+      
+      
+    <!-- =============== Javascript code for smooth scrolling ========== -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">
+      $('a[href^="#"]').click
+      (
+          function()
+          {
+              var link_name = $(this).attr("href");
+              $('html, body').animate
+              (
+                  { scrollTop: $(link_name).offset().top },
+                  'fast'
+              );
+          return false;
+      });
+    </script>
+    <script>
+      $('footer').click(
+          function() {
+              $('body, html').animate(
+                  { scrollTop: 0 },
+                  'fast'
+              );
+              return false;
+          }
+      );
+    </script>
+  </body>
+</html>

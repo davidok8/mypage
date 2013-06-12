@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <title>David Ok</title>
+  </head>
+
+  <body>
+    <!-- ============================= HEADER ========================== -->
+    <header>
+      <h1>David OK</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><i class="icon-home"></i> <a href="index.html">Home</a></li>
+          <li><i class="icon-search"></i> <a href="publications.html">Publications</a></li>
+          <li><i class="icon-cogs"></i> <a href="software.html">Software</a></li>
+          <li><i class="icon-music"></i> <a href="music.html">Music</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <section id="software">
+      <article>
+        <h2>My C++ Libraries</h2>
+        During my PhD, I have developed and still maintain the following software.
+        <ul>
+            <li><a href="http://davidok8.github.io/doplusplus/">DO++ Libraries</a>: basic set of libraries for Computer Vision. (Code cleaning in progress).<br/>
+            The repository is hosted on <a href="https://github.com/davidok8/doplusplus">GitHub <i class="icon-github"></i></a>.
+            <li>4th-Order Match Propagation (Code cleaning in the process).</li>
+        </ul>
+      </article>
+
+
+      <article>
+        <h2>Compiled Qt5 Libraries</h2>
+        <p>DO++ libraries have dependencies with Qt5. Because compiled libraries are not available for Visual Studio in 64bit, I have made my own compiled libraries available here:</p>
+        <ul>
+          <li><a href="https://dl.dropbox.com/u/80774144/repositories/qt-5.0.1-msvc2010-x64.7z">Qt 5.0.1 compiled with VS2010 64bit (ICU and WebKit disabled) (561 Mb)</a></li>
+          <li><a href="https://dl.dropbox.com/u/80774144/repositories/qt-5.0.1-msvc2012-x64.7z">Qt 5.0.1 compiled with VS2012 64bit (ICU and WebKit disabled) (594 Mb)</a></li>
+        </ul>
+        <h3>Compilation details</h3>
+        I compiled Qt 5 as described <a href="http://scriptogr.am/davidok8/post/building-and-using-qt-5-with-cmake">here</a>.
+        
+        <h3>Update</h3>
+        <ul>
+          <li><b>good news</b>: since April 9, 2013, compiled Qt 5.0.2 libraries are available for VS 2012 64bit at <a href="http://qt-project.org/downloads">qt-project.org</a>.</li>
+          <li><b>bad news</b>: still no binaries for VS 2010 x64...</li>
+        </ul>
+      </article>
+
+
+
+
+      <article>
+        <h2>Compiled Boost C++ Libraries</h2>
+        <p>I often use Boost (but DO++ does not need it).  <a href="http://www.boostpro.com/">BoostPro</a> also makes Boost binaries available but only up to VS2010. Just in case, here are my own compiled Boost libraries.</p>
+        <ul>
+          <li><a href="https://dl.dropbox.com/u/80774144/repositories/Boost-1.46.1-msvc2010-x64.7z">Boost 1.46.1 compiled with VS2010 64bit (73.3 Mb)</a></li>
+          <li><a href="https://dl.dropbox.com/u/80774144/repositories/boost-1.52-msvc2012-x64.7z">Boost 1.52   compiled with VS2012 64bit (67 Mb)</a></li>
+        </ul>
+        <p>Don't be fooled by the compressed size of the archives (using LZMA compression), unarchiving them will yield large folders weighing aroung 2.2Gb.</p></p>
+
+        <h3>Compilation details</h3>
+        I compiled Boost as described <a href="http://scriptogr.am/davidok8/post/building-boost-libraries-for-windows">here</a>.
+      </article>
+    </section>
+
+
+
+
+    <!-- ============================= FOOTER ========================== -->
+    <footer>
+      <p class="quote">
+          <i class="icon-quote-left"></i> Men have become the tools of their tools. <i class="icon-quote-right"></i>
+          <i class="quoted-author">Henry David Thoreau</i>
+      </p>
+      <a href="">Copyright &copy; <span>David OK, 2013 - present</span>.</a>
+    </footer>
+
+    <!-- =============== Javascript code for smooth scrolling ========== -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">
+      $('a[href^="#"]').click
+      (
+          function()
+          {
+              var link_name = $(this).attr("href");
+              $('html, body').animate
+              (
+                  { scrollTop: $(link_name).offset().top },
+                  'fast'
+              );
+          return false;
+      });
+    </script>
+    <script>
+      $('footer').click(
+          function() {
+              $('body, html').animate(
+                  { scrollTop: 0 },
+                  'fast'
+              );
+              return false;
+          }
+      );
+    </script>
+  </body>
+</html>
