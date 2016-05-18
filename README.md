@@ -1,4 +1,4 @@
 Personal webpage
 ================
 
-Personal webpage: www.david-ok.com
+Personal webpage: https://davidok8.github.io/mypage
